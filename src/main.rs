@@ -1,6 +1,7 @@
 use std::io;
 use std::vec;
 
+/// Assignment object used for all assignments
 #[derive(Debug)]
 struct Assignment {
     label: String,
@@ -8,6 +9,7 @@ struct Assignment {
     points: i32,
 }
 
+/// Calculates the total average in the class based on assignments
 fn calculate_total_average(assignment_list: Vec<Assignment>) -> f32 {
     let mut point_total = 0f32;
     let mut student_points = 0f32;
